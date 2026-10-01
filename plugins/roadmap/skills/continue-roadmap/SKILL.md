@@ -35,6 +35,11 @@ Read, in this order: the chosen `ROADMAP.md`, its sibling `CONTINUE.md` if one
 exists (it carries project-specific gotchas and known-correct failures — respect
 them), and the repo's `CLAUDE.md`.
 
+Then load the `roadmap` skill from this plugin. Its rules keep applying while you
+work a stage, not only when a roadmap is written: verify facts before asking, label
+anything unverified `ASSUMPTION`, and brief worktree agents by pasting requirements,
+never by path.
+
 ## 4. Verify the state against the repo
 
 The stage table is hand-updated and can be stale. Check before trusting it:
