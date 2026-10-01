@@ -27,6 +27,11 @@ tasks, however many files they touch. Always when asked for one.
 to the project's `.gitignore`. Because it is untracked, an agent in a git worktree
 cannot see it: brief it by pasting requirements, never by path.
 
+When every stage is `merged`, the roadmap moves to
+`<project>/.claude/plans/finished/<work-name>/`. Nothing under `finished/` is read
+again — not to list, search or gather context — unless the user names it. Before
+creating a roadmap, check that `<work-name>` is not already taken there.
+
 ## Mandatory sections
 
 - **Context** and an explicit scope statement, including what this roadmap does
@@ -62,7 +67,8 @@ verified is labelled `ASSUMPTION`.
 ## Resume
 
 `/continue-roadmap` (this plugin) finds the roadmap, verifies the table against the
-repo, proposes the next unblocked stage and waits.
+repo, proposes the next unblocked stage and waits. When it closes the last stage,
+it archives the roadmap under `.claude/plans/finished/`.
 
 ## Skeleton
 

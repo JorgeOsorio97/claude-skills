@@ -28,7 +28,7 @@ Or turn on auto-update for the `jorgeosorio97` marketplace in `/plugin` → Mark
 
 | Plugin | Skills | What it does |
 |---|---|---|
-| `roadmap` | `roadmap`, `continue-roadmap` | Build a roadmap for work that spans several sessions/PRs, then resume it stage by stage. Roadmaps live in `.claude/plans/<work>/ROADMAP.md` (gitignored). |
+| `roadmap` | `roadmap`, `continue-roadmap` | Build a roadmap for work that spans several sessions/PRs, then resume it stage by stage. Roadmaps live in `.claude/plans/<work>/ROADMAP.md` (gitignored); finished ones move to `.claude/plans/finished/` and are never read again. |
 
 ## Contributing
 

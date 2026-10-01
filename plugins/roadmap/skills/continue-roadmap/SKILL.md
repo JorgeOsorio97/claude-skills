@@ -9,15 +9,19 @@ Resume work from a roadmap in `.claude/plans/`.
 ## 1. Find the roadmaps
 
 ```bash
-ls -d .claude/plans/*/ 2>/dev/null
-grep -l . .claude/plans/*/ROADMAP.md 2>/dev/null
+ls -d .claude/plans/*/ 2>/dev/null | grep -v '/finished/$'
 ```
+
+**Never read anything under `.claude/plans/finished/`** — not to list, not to
+search, not for context. Finished roadmaps are archived there precisely so they
+stay out of the agent's context. Only open one if the user names it explicitly.
 
 For each `ROADMAP.md` found, read its stage table and note: the roadmap's title,
 how many stages are `todo` / `in progress`, and which stage is next unblocked (the
 first `todo` whose deps are `merged`).
 
-A roadmap with no `todo` and no `in progress` rows is finished — exclude it.
+A roadmap with no `todo` and no `in progress` rows is finished but was never
+archived — exclude it from the choice and offer to archive it (see step 8).
 
 ## 2. Choose which one
 
@@ -77,6 +81,21 @@ let the user choose.
 
 Update the stage's row (status + PR link), append the log entry the roadmap
 requires, and state plainly anything you left out or deferred.
+
+## 8. Closing the roadmap
+
+When the stage you just closed was the last one (no `todo`, no `in progress` rows
+left), archive the whole roadmap directory — `ROADMAP.md`, `CONTINUE.md` and
+anything else in it:
+
+```bash
+mkdir -p .claude/plans/finished
+mv .claude/plans/<work-name> .claude/plans/finished/<work-name>
+```
+
+If `finished/<work-name>` already exists, stop and ask instead of overwriting.
+Say that you archived it and where. Follow-ups listed in the roadmap do not move
+into a new roadmap on their own — mention them so the user can decide.
 
 ## Note for worktree agents
 
