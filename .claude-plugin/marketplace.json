@@ -1,0 +1,17 @@
+{
+  "name": "lajes5",
+  "owner": {
+    "name": "Grupo Lajes",
+    "url": "https://github.com/Lajes5"
+  },
+  "description": "Grupo Lajes' Claude Code skills.",
+  "plugins": [
+    {
+      "name": "roadmap",
+      "source": "./plugins/roadmap",
+      "description": "Multi-session roadmaps: verify facts, grill one question at a time, write a stage/decision table, then resume stage by stage.",
+      "category": "productivity",
+      "keywords": ["roadmap", "planning", "multi-pr"]
+    }
+  ]
+}

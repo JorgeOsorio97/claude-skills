@@ -1,0 +1,12 @@
+{
+  "name": "roadmap",
+  "version": "1.0.0",
+  "description": "Multi-session roadmaps: verify facts, grill one question at a time, write a stage/decision table, then resume stage by stage.",
+  "author": {
+    "name": "Grupo Lajes",
+    "url": "https://github.com/Lajes5"
+  },
+  "repository": "https://github.com/Lajes5/claude-skills",
+  "license": "MIT",
+  "keywords": ["roadmap", "planning", "multi-pr"]
+}
