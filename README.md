@@ -1,11 +1,11 @@
-# claude-skills
+# roadmap-skills
 
 Jorge Osorio's Claude Code plugins, published as a plugin marketplace.
 
 ## Install
 
 ```
-/plugin marketplace add JorgeOsorio97/claude-skills
+/plugin marketplace add JorgeOsorio97/roadmap-skills
 /plugin install roadmap@jorgeosorio97
 ```
 

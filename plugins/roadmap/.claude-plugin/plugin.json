@@ -1,12 +1,12 @@
 {
   "name": "roadmap",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Multi-session roadmaps: verify facts, grill one question at a time, write a stage/decision table, then resume stage by stage.",
   "author": {
     "name": "Jorge Osorio",
     "url": "https://github.com/JorgeOsorio97"
   },
-  "repository": "https://github.com/JorgeOsorio97/claude-skills",
+  "repository": "https://github.com/JorgeOsorio97/roadmap-skills",
   "license": "MIT",
   "keywords": ["roadmap", "planning", "multi-pr"]
 }
