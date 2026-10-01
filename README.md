@@ -1,12 +1,12 @@
 # claude-skills
 
-Grupo Lajes' Claude Code plugins, published as a plugin marketplace.
+Jorge Osorio's Claude Code plugins, published as a plugin marketplace.
 
 ## Install
 
 ```
-/plugin marketplace add Lajes5/claude-skills
-/plugin install roadmap@lajes5
+/plugin marketplace add JorgeOsorio97/claude-skills
+/plugin install roadmap@jorgeosorio97
 ```
 
 Recommended companion (the "grill" step uses it if present):
@@ -19,10 +19,10 @@ Recommended companion (the "grill" step uses it if present):
 ## Update
 
 ```
-/plugin marketplace update lajes5
+/plugin marketplace update jorgeosorio97
 ```
 
-Or turn on auto-update for the `lajes5` marketplace in `/plugin` → Marketplaces.
+Or turn on auto-update for the `jorgeosorio97` marketplace in `/plugin` → Marketplaces.
 
 ## Plugins
 

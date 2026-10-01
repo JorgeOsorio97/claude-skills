@@ -1,10 +1,10 @@
 {
-  "name": "lajes5",
+  "name": "jorgeosorio97",
   "owner": {
-    "name": "Grupo Lajes",
-    "url": "https://github.com/Lajes5"
+    "name": "Jorge Osorio",
+    "url": "https://github.com/JorgeOsorio97"
   },
-  "description": "Grupo Lajes' Claude Code skills.",
+  "description": "Jorge Osorio's Claude Code skills.",
   "plugins": [
     {
       "name": "roadmap",
